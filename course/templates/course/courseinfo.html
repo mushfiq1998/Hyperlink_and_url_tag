@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+{% load static %}
+<title> {% block title %} Django {% endblock title %} </title>
+
+{% block corecss %}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static 'course/css/course.css' %}">
+{% endblock corecss %}
+
+{% block content %} 
+    <h4>Apply Second approach to use hyperlink from courseinfo.html:</h4>
+    <a href="{{learn_dj}}">Something Django course</a> 
+    <h2>Welcome to Django page</h2>
+{% endblock content %} 
